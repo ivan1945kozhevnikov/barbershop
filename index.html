@@ -7,49 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <title>  Барбершоп «Бородинский»</title>
  </head>
  <body>
    <header>
-   <nav>
-      <ul>
-          <li>
-              <a href="#"> О нас</a>
+    <div class="container">
+      <nav class="main-header-nav">
+       <ul class="site-navigation">
+          <li class="site-navigation-item">
+              <a class="link-item" href="#"> О нас</a>
           </li>
-          <li>
-              <a  href="#">Каталог</a>
+          <li class="site-navigation-item">
+              <a class="link-item" href="#">Каталог</a>
          </li>
-          <li>
-              <a  href="#">Частые вопросы</a>
+          <li class="site-navigation-item">
+              <a class="link-item" href="#">Частые вопросы</a>
          </li>
       </ul>
-      <ul>
-          <li>
-              <a href="#">
-                  <svg width="17" height="17" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <ul class="user-navigation">
+          <li class="user-navigation-item">
+              <a class="link-item" href="#">
+                <svg class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z"/>
                   </svg>
-                  <span> Поиск </span>                  
+                  <span class="visually-hidden"> Поиск </span>                  
                </a>
             </li>
-          <li>
-              <a href="#">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#242424"/>
+          <li class="user-navigation-item">
+              <a class="link-item" href="#">
+                <svg  class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z"/>
                   </svg>
-                 <span>Корзина</span>
+                 <span  class="visually-hidden">Корзина</span>
               </a>
          </li>
-         <li>
-            <a href="#">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" fill="#BDBDBD" />
+         <li class="user-navigation-item">
+            <a class="link-item link-item-login" href="#">
+                <svg  class="navigation-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z"/>
                 </svg>
                 <span>Вход</span> 
               </a>
-       </li>
+        </li>
       </ul>
-   </nav>     
+     </nav>
+   </div>    
   </header> 
   <main>
     <h1>  
