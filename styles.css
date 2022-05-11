@@ -2,9 +2,9 @@ body {
     margin: 0;
     min-width: 970px; 
     font-family: "PT Sans Narrow", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
     color: #242424;
     background-color: #000000;
 }
@@ -80,5 +80,54 @@ body {
  }
 
  .link-item-login .navigation-icon {
-     left: -9px;
+     left: -20px;
  }
+
+.advantages {
+    height: 800px;
+    background-image: url(img/main-bg.jpg);
+    margin: 0 auto;     /* не работает */
+    padding-top: 64px;
+    color:#ffffff;
+}
+
+.advantages-list {
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 64px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.advantages-item {
+    width: 277px;
+}
+
+.advantages-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.advantages-title::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    top: 160%;
+    transform: rotate(45deg);
+}
+
+.advantages-description {
+    font-family: 'PT Sans' , sans-serif;
+    padding-top: 56px;
+    margin: 0;
+    text-align: center;
+}
