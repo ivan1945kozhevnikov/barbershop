@@ -218,8 +218,7 @@ body {
     content: "";
     height: 100%;
     left: -40px;
-    border-left: 0;
-    border: 1px dashed #595959;
+    border-left: 1px dashed #595959;
 } 
 
 .slider-wrapper {
@@ -276,4 +275,61 @@ body {
 
 .img-button {
     transform: rotate(180deg);
+}
+
+.contacts {
+    width: 350px;
+}
+
+.contact-title  {
+    margin-bottom: 24px;
+}
+
+.contacts-title-item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #af7842;
+    margin: 0 0 8px 0;
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.address-descriptions {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.address-tel {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #242424;
+    margin-bottom: 22px;
+}
+
+.tel-list {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    margin: 0 0 21px 0;
+    padding: 0;
+}
+
+.tel-descriptions {
+    margin: 0;
+}
+
+.tel-button {
+    margin-left: 16px;
+    color: #242424;
+    background-color: #ffffff;
+}
+
+.appointment {
+    width: 430px
 }
