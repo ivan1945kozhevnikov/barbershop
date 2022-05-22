@@ -103,41 +103,41 @@
             </li>
           </ul>
              <a class="services-link button" href="#">
-               Посмотреть все
+               Посмотреть все <img class="services-link-button" src="img/arrow.svg" width="8" height="13" alt="Посмотреть все">
             </a>
         </section>
         <section class="gallery">
-          <h2 class="gallery-title">Фотогалерея</h2>
+          <h2 class="gallerytile">Фотогалерея</h2>
           <div class="slider-wrapper">
              <img class="slider-image" src="img/photogallery.jpg" width="390" height="250" alt="фотогалерея">
-             <ul class="button-list">
+             <ol class="slider-pagination">
                  <li>
-                  <button class="button-ellipse">
-                  <img src="img/ellipse.svg" width="8" height="8" alt="Фото 1">
+                  <button class="slider-pagination-button">
+                   Фото 1 
                   </button>
                  </li>
                  <li>
-                   <button class="button-ellipse">
-                    <img src="img/ellipse.svg" width="8" height="8" alt="Фото 2">
+                   <button class="slider-pagination-button">
+                    Фото 2
                    </button>
                  </li>
                  <li>
-                   <button class="button-ellipse">
-                    <img src="img/ellipse.svg" width="8" height="8" alt="Фото 3">
+                   <button class="slider-pagination-button">
+                    Фото 3
                    </button>
                  </li>
                  <li>
-                   <button class="button-ellipse">
-                    <img src="img/ellipse.svg" width="8" height="8" alt="Фото 4">
+                   <button class="slider-pagination-button">
+                    Фото 4
                   </button>
                 </li>
-             </ul>
+             </ol>
              <div class="slider-controls">
-              <button class="button-photo">
-               <img class="img-button" src="img/stroke.svg" width="8" height="13" alt="Предыдущее фото">
+              <button class="slider-button">
+               <img class="slider-back-button" src="img/arrow.svg" width="8" height="13" alt="Предыдущее фото">
               </button> 
-              <button class="button-photo">
-                <img src="img/stroke.svg" width="8" height="13" alt="Следующее фото">
+              <button class="slider-button"> 
+                <img src="img/arrow.svg" width="8" height="13" alt="Следующее фото">
               </button>
             </div>
           </div>
@@ -153,7 +153,7 @@
              +7 800 555-86-28
              </a>
         </address>
-         <h3 class="contacts-title-item">Время работы</h3>
+         <h3 class="contact-tile">Время работы</h3>
          <ul class="tel-list">
            <li>
             <p class="tel-descriptions"> пн—пт: с 10:00 до 22:00</p>
@@ -170,21 +170,25 @@
           </a>
         </section>
         <section class="appointment">
-           <h2>Записаться</h2>
-           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
+           <h2 class="appointment-tile">Записаться</h2>
+           <p class="appointment-description">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
            </p>
-          <form method="post">
-            <label for="date">Дата</label>
-            <input type="text" name="date" id="date" placeholder="01.01.2020">
-            <label for="time">Время</label>
-            <input type="text" name="time" id="time" placeholder="10:10">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="+7 800 00-00">
-            <label for="text">Ваше имя</label>
-            <input type="text" name="text" id="text">
-            <button type="submit">
+          <form class="appointment-form" method="post">
+            <label for="date">Дата
+             <input type="text" name="date" id="date" placeholder="01.01.2020">
+            </label>
+            <label for="time">Время
+             <input type="text" name="time" id="time" placeholder="10:10">
+            </label>
+            <label for="tel">Телефон
+             <input type="tel" name="tel" id="tel" placeholder="+7 800 00-00">
+            </label>
+            <label for="text">Ваше имя
+             <input class="label-text" type="text" name="text" id="text">
+             <button type="submit">
              Записаться
             </button>
+           </label>
           </form>
         </section>
        </div>

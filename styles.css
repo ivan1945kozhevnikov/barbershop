@@ -202,6 +202,10 @@ body {
     padding-right: 44px;
 }
 
+.services-link-button {
+    margin-left: 12px;
+}
+
 .advantages-description {
     font-family: 'PT Sans', sans-serif;
     padding-top: 56px;
@@ -225,7 +229,7 @@ body {
      position: relative;
 }
 
-.gallery-title {
+.gallery-tile {
     font-size: 32px;
     line-height: 35px;
     text-transform: uppercase;
@@ -236,7 +240,7 @@ body {
     display: block;
 }
 
-.button-list {
+.slider-pagination {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -244,17 +248,15 @@ body {
     padding: 0; 
 }
 
-.button-ellipse {
+.slider-pagination-button {
+    width: 8px;
+    background: url("img/ellipse.svg") no-repeat center 8px/8px;
     border: 0;
+    padding: 0;
     margin-left: 8px;
-    background-color: #fbf7f4;
 }
 
-.button-ellipse:first-child {
-    margin: 0;
-}
-
-.button-ellipse:last-child {
+li:first-child > .slider-pagination-button {
     margin: 0;
 }
 
@@ -263,17 +265,17 @@ body {
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    top: 25%;
-    transform: translateY(50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.button-photo {
+.slider-button {
     padding: 23px 20px;
     background-color:  #000000;
     border: 0;
 }
 
-.img-button {
+.slider-back-button {
     transform: rotate(180deg);
 }
 
@@ -281,8 +283,8 @@ body {
     width: 350px;
 }
 
-.contact-title  {
-    margin-bottom: 24px;
+.contact-tile  {
+    margin: 0 0 24px 0;
 }
 
 .contacts-title-item {
@@ -332,4 +334,30 @@ body {
 
 .appointment {
     width: 430px
+}
+
+.appointment-tile {
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.appointment-description {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #595959;
+    margin: 0 0 24px 0;
+}
+
+.appointment-form {
+    display: grid;
+    grid-template-columns: 114px 74px 208px;
+    column-gap: 17px;
+    row-gap: 19px;
+}
+
+.label-text {
+    width: 430px;
 }
