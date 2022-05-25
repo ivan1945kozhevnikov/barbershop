@@ -81,63 +81,69 @@
               </li>
           </ul>
     </section>
-    <section class="services">
-        <h2>Популярные услуги</h2>
-           <ul>
-               <li>
-                   <h3>Стрижка машинкой</h3>
-                   <span>800 ₽</span>
+      <div class="sections-container">
+       <section class="services">
+         <h2 class="section-title">Популярные услуги</h2>
+           <ul class="services-list">
+               <li class="services-item">
+                   <h3 class="services-item-title">Стрижка машинкой</h3>
+                   <span class="services-item-price">800 ₽</span>
                </li>
-               <li>
-                  <h3>Стрижка усов</h3>
-                 <span>1200 ₽</span>
+               <li class="services-item">
+                  <h3 class="services-item-title">Стрижка усов</h3>
+                 <span class="services-item-price">1200 ₽</span>
               </li>
-              <li>
-                <h3>Груминг</h3>
-                <span>400 ₽</span>
+              <li class="services-item">
+                <h3 class="services-item-title">Груминг</h3>
+                <span class="services-item-price">400 ₽</span>
              </li>
-             <li>
-                <h3>Комплексная стрижка</h3>
-                <span>2300 ₽</span>
+             <li class="services-item">
+                <h3 class="services-item-title">Комплексная стрижка</h3>
+                <span class="services-item-price">2300 ₽</span>
             </li>
-         </ul>
-           <a href="#">
-               Посмотреть все
-           </a>
+          </ul>
+             <a class="services-link button" href="#">
+               Посмотреть все 
+            </a>
         </section>
-           <section class="photo-gallery">
-               <h2>Фотогалерея</h2>
-               <img src="img/photogallery.jpg" width="390" height="250" alt="фотогалерея">
-               <ul>
-                 <li>
-                  <button>
-                  Фото 1
+        <section class="gallery">
+          <h2 class="section-title">Фотогалерея</h2>
+          <div class="slider-wrapper">
+             <img class="slider-image" src="img/photogallery.jpg" width="390" height="250" alt="фотогалерея">
+             <ol class="slider-pagination">
+                 <li class="slider-pagination-item">
+                   <button class="slider-pagination-button slider-pagination-button-current">
+                     <span class="visually-hidden">Фото 1</span>
                   </button>
-                </li>
-                 <li>
-                  <button>
-                   Фото 2
-                  </button>
-                </li>
-                <li>
-                   <button>
-                     Фото 3
+                 </li>
+                 <li class="slider-pagination-item">
+                  <button class="slider-pagination-button">
+                    <span class="visually-hidden">Фото 2</span>
+                   </button>
+                 </li>
+                 <li class="slider-pagination-item">
+                  <button class="slider-pagination-button">
+                    <span class="visually-hidden">Фото 3</span>
+                   </button>
+                 </li>
+                 <li class="slider-pagination-item">
+                  <button class="slider-pagination-button">
+                    <span class="visually-hidden">Фото 4</span>
                    </button>
                 </li>
-                <li>
-                   <button>
-                     Фото 4
-                  </button>
-                </li>
-              </ul>
-                <button>
-                 Следующее фото
-                </button>
-                 <button>
-                 Предыдущее фото
-                </button>
-          </section>
-        <section class="contacts">
+             </ol>
+             <div class="slider-controls">
+              <button class="slider-button slider-back-button">
+               <span class="visually-hidden">Предыдущее фото</span> 
+               </button>
+               <button class="slider-button">
+                 <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
+        </section>
+       </div>
+       <section class="contacts">
          <h2>Контакты</h2>
          <h3>Барбершопа «Бородинский»</h3>
          <address> 
