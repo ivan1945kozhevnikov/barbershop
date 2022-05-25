@@ -153,10 +153,11 @@ body {
     text-transform: uppercase;
 }
 
-.sections-title {
+.section-title {
     font-size: 32px;
     line-height: 35px;
-    margin: 0 0 28px 0;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
 }
 
 .services-list {
@@ -169,13 +170,24 @@ body {
 }
 
 .services-item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
 }
 
+.services-item::before {
+    content: "";
+    flex-grow: 1;
+    opacity: 0.5;
+    border-bottom: 2px dotted #595959;
+    margin: 0 16px;
+    order: 1;
+}
+
 .services-item:first-child {
     margin-top: 0;
+    
 }
 
 .services-item-title {
@@ -183,7 +195,7 @@ body {
 }
 
 .services-item-price {
-    color: #af7842;
+    color: #af7842;order: 2;
 }
 
 .button {
@@ -195,15 +207,15 @@ body {
     color: #ffffff;
     background-color:  #000000;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .services-link {
     margin-top: 30px;
     padding-right: 44px;
-}
-
-.services-link-button {
-    margin-left: 12px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center right 20px;
 }
 
 .advantages-description {
@@ -226,14 +238,7 @@ body {
 } 
 
 .slider-wrapper {
-     position: relative;
-}
-
-.gallery-tile {
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-    margin: 0 0 20px 0;
+    position: relative;
 }
 
 .slider-image {
@@ -248,16 +253,22 @@ body {
     padding: 0; 
 }
 
-.slider-pagination-button {
-    width: 8px;
-    background: url("img/ellipse.svg") no-repeat center 8px/8px;
-    border: 0;
-    padding: 0;
-    margin-left: 8px;
+.slider-pagination-item {
+    margin: 0 4px;
 }
 
-li:first-child > .slider-pagination-button {
-    margin: 0;
+.slider-pagination-button {
+    width: 8px;
+    height: 8px;
+    background-color: #bdbdbd;
+	border-radius: 50%;
+    border: none;
+    padding: 0; 
+    cursor: pointer;
+}
+
+.slider-pagination-button-current {
+    background-color: #242424;
 }
 
 .slider-controls {
@@ -270,9 +281,13 @@ li:first-child > .slider-pagination-button {
 }
 
 .slider-button {
-    padding: 23px 20px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 30px 24px;
     background-color:  #000000;
-    border: 0;
+    border: none;
+    cursor: pointer;
 }
 
 .slider-back-button {
@@ -281,10 +296,6 @@ li:first-child > .slider-pagination-button {
 
 .contacts {
     width: 350px;
-}
-
-.contact-tile  {
-    margin: 0 0 24px 0;
 }
 
 .contacts-title-item {
@@ -333,15 +344,17 @@ li:first-child > .slider-pagination-button {
 }
 
 .appointment {
+    position: relative;
     width: 430px
 }
 
-.appointment-tile {
-    font-size: 32px;
-    line-height: 35px;
-    text-transform: uppercase;
-    margin: 0 0 20px 0;
-}
+.appointment::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    left: -40px;
+    border-left: 1px dashed #595959;
+} 
 
 .appointment-description {
     font-family: 'PT Sans', sans-serif;
@@ -359,5 +372,24 @@ li:first-child > .slider-pagination-button {
 }
 
 .label-text {
-    width: 430px;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.input-text {
+    height: 40px;
+    margin-top: 8px;
+    padding: 0;
+    border: 2px solid #242424;
+    text-align: center;
+}
+
+.input-name {
+    width: 385px;
+}
+
+.enroll-button {
+    margin-top: 33px;
 }
