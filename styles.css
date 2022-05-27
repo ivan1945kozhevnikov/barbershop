@@ -298,25 +298,26 @@ body {
     width: 350px;
 }
 
-.contacts-title-item {
+.contacts-subtitle {
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
+    text-transform: uppercase;
     color: #af7842;
     margin: 0 0 8px 0;
 }
 
-.address-list {
+.contacts-address {
     font-style: normal;
 }
 
-.address-descriptions {
+.contacts-address-description {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     margin: 0 0 8px 0;
 }
 
-.address-tel {
+.contacts-address-phone {
     display: block;
     font-size: 24px;
     font-weight: 700;
@@ -333,11 +334,7 @@ body {
     padding: 0;
 }
 
-.tel-descriptions {
-    margin: 0;
-}
-
-.tel-button {
+.button-feedback {
     margin-left: 16px;
     color: #242424;
     background-color: #ffffff;
@@ -369,16 +366,40 @@ body {
     grid-template-columns: 114px 74px 208px;
     column-gap: 17px;
     row-gap: 19px;
-}
-
-.label-text {
-    font-family: PT Sans;
-    font-weight: 700;
-    line-height: 22px;
     text-transform: uppercase;
 }
 
-.input-text {
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.label {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    align-self: flex-start;
+}
+
+.label-icon {
+    position: relative;
+    padding-right: 20px;
+}
+
+.label-icon::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url("img/info.svg");
+    background-repeat: no-repeat;
+}
+
+.field {
     height: 40px;
     margin-top: 8px;
     padding: 0;
@@ -386,10 +407,12 @@ body {
     text-align: center;
 }
 
-.input-name {
-    width: 385px;
+.field-group-name {
+    grid-column: 1/-1;
 }
 
-.enroll-button {
-    margin-top: 33px;
+.appointment-button {
+    width: 130px;
+    border: none;
+    cursor: pointer;
 }
