@@ -143,49 +143,59 @@
           </div>
         </section>
        </div>
-       <section class="contacts">
-         <h2>Контакты</h2>
-         <h3>Барбершопа «Бородинский»</h3>
-         <address> 
-           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-           <a href="tel:+78005558628">
+       <div class="sections-container">
+        <section class="contacts">
+          <h2 class="section-title">Контакты</h2>
+          <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
+          <address class="contacts-address"> 
+           <p class="contacts-address-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+           <a class="contacts-address-phone" href="tel:+78005558628">
              +7 800 555-86-28
              </a>
         </address>
-         <h3>Время работы</h3>
-         <ul>
+         <h3 class="contacts-subtitle">Время работы</h3>
+         <ul class="tel-list">
            <li>
-            <p> пн—пт: с 10:00 до 22:00</p>
+            пн—пт: с 10:00 до 22:00
           </li>
           <li> 
-            <p>сб—вс: с 10:00 до 19:00</p>
+            сб—вс: с 10:00 до 19:00
           </li>
         </ul> 
-           <a href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1.+P%D0%B5%D0%BA%D0%B8+%D0%9A%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8,+5+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+%D0%9F,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+197022/@59.9683447,30.3151923,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315bc4e8ce61:0x74d4f0cbfe1fd995!8m2!3d59.968342!4d30.317381">
+           <a class="button" href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1.+P%D0%B5%D0%BA%D0%B8+%D0%9A%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8,+5+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+%D0%9F,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+197022/@59.9683447,30.3151923,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315bc4e8ce61:0x74d4f0cbfe1fd995!8m2!3d59.968342!4d30.317381">
            Как проехать
           </a>
-          <a href="#">
+          <a class="button-feedback button" href="#">
           Обратная связь
           </a>
         </section>
         <section class="appointment">
-           <h2>Записаться</h2>
-           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
+           <h2 class="section-title">Записаться</h2>
+           <p class="appointment-description">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
            </p>
-          <form method="post">
-            <label for="date">Дата</label>
-            <input type="text" name="date" id="date" placeholder="01.01.2020">
-            <label for="time">Время</label>
-            <input type="text" name="time" id="time" placeholder="10:10">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="+7 800 00-00">
-            <label for="text">Ваше имя</label>
-            <input type="text" name="text" id="text">
-            <button type="submit">
-             Записаться
-            </button>
-          </form>
+          <form class="appointment-form" method="post">
+            <p class="field-group">
+              <label class="label label-icon" for="date">Дата </label>
+              <input class="field" type="text" name="date" id="date" placeholder="01.01.2020">
+            </p>
+            <p class="field-group">
+             <label class="label label-icon" for="time">Время </label>
+             <input class="field" type="text" name="time" id="time" placeholder="10:10">
+            </p>  
+             <p class="field-group">
+              <label class="label" for="tel">Телефон</label>
+              <input class="field" type="tel" name="tel" id="tel" placeholder="+7 800 00-00">
+            </p>
+            <p class="field-group field-group-name">
+              <label class="label" for="text">Ваше имя </label>
+              <input class="field" type="text" name="text" id="text">
+            </p>
+           <button class="button appointment-button" type="submit">
+           Записаться
+          </button>
+        </form>
         </section>
+       </div>
       </div>
     </main>
     <footer>
