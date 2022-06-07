@@ -425,21 +425,13 @@ body {
 }
 
 .footer {
+    display: grid;
+    grid-template-columns: 185px 279px 182px;
+    column-gap: 147px;
     background-color: #242424;
     padding-top: 40px;
+    padding-bottom: 40px;
     margin-top: 61px;
-}
-
-.container-footer {
-    display: grid;
-    grid-template-columns: 184px 279px 184px;
-    column-gap: 147px;
-    width: 940px;
-    margin: 0 auto;
-}
-
-.section-contacts {
-    width: 184px;
 }
 
 .footer-address {
@@ -472,10 +464,6 @@ body {
     text-transform: uppercase;
 }
 
-.section-email {
-    width: 279px;
-}
-
 .title-section-footer {
     font-size: 20px;
     font-weight: 700;
@@ -503,10 +491,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.section-mesengers {
-    width: 184px;
-} 
 
 .footer-navigation {
     display: flex;
