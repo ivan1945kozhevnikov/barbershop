@@ -425,20 +425,22 @@ body {
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: 185px 279px 182px;
-    column-gap: 147px;
     background-color: #242424;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
     margin-top: 61px;
 }
 
-.footer-address {
+.footer-container { 
+    display: grid;
+    grid-template-columns: 185px 279px 182px;
+    column-gap: 147px;
+}
+
+.footer-contacts-address {
     font-style: normal;
 }
 
-.footer-address-desription {
+.footer-contacts-address-desription {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -456,7 +458,7 @@ body {
     margin-bottom: 16px;
 }
 
-.address-link {
+.footer-contacts-address-link {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
@@ -464,7 +466,7 @@ body {
     text-transform: uppercase;
 }
 
-.title-section-footer {
+.footer-title {
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -473,20 +475,25 @@ body {
     margin: 0;
 }
 
-.footer-form {
+.newsletter-form {
     display: flex;
     margin-top: 14px;
 }
 
-.field-form {
-    width: 233px;
-    height: 40px;
-    padding: 0;
+.newsletter-email {
+    font-family: 'PT Sans', sans-serif;
+    flex-grow: 1;
     border: 2px solid #000000;
-    text-align: center;
+    padding: 10px 16px;
 }
 
-.button-footer {
+.newsletter-email::placeholder {
+    color: #bdbdbd;
+}
+
+.newsletter-button {
+    width: 56px;
+    height: 44px;
     background-image: url("img/arrow2.svg");
     background-repeat: no-repeat;
     background-position: center;
