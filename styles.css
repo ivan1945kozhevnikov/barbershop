@@ -482,6 +482,7 @@ body {
 
 .newsletter-email {
     font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
     flex-grow: 1;
     border: 2px solid #000000;
     padding: 10px 16px;
@@ -494,29 +495,33 @@ body {
 .newsletter-button {
     width: 56px;
     height: 44px;
-    background-image: url("img/arrow2.svg");
+    background-image: url("img/arrow-tail.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.footer-navigation {
+.social-list {
     display: flex;
     padding: 0;
-}
-
-.footer-navigation-item {
+    margin: 0;
     list-style: none;
 }
 
-.link-button-footer {
+.social-item {
+    margin-top: 14px;
     margin-right: 8px;
+    margin-bottom: 36px;
 }
 
-.footer-navigation-icon {
+.social-link {
+    flex-wrap: wrap;
+}
+
+.social-icon {
     fill: #ffffff;
 }
 
-.footer-link {
+.copyright {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -525,6 +530,6 @@ body {
     color: #ffffff;
 }
 
-.footer-link-item {
+.copyright-link {
     color: #af7842;
 }
