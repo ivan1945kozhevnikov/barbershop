@@ -420,5 +420,108 @@ body {
 
 .appointment-button {
     width: 130px;
-    justify-self: start;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #242424;
+    padding: 40px;
+    margin-top: 61px;
+}
+
+.footer-container { 
+    display: grid;
+    grid-template-columns: 185px 279px 184px;
+    column-gap: 146px;
+}
+
+.footer-contacts-address {
+    font-style: normal;
+}
+
+.footer-contacts-address-desription {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 27px 0 4px 0;
+    color: #ffffff;
+}
+
+.footer-address-phone {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-contacts-address-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 14px;
+}
+
+.newsletter-email {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    flex-grow: 1;
+    border: 2px solid #000000;
+    padding: 10px 16px;
+}
+
+.newsletter-email::placeholder {
+    color: #bdbdbd;
+}
+
+.newsletter-button {
+    width: 56px;
+    height: 44px;
+    background-image: url("img/arrow-tail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 14px 0 36px;
+    list-style: none;
+}
+
+.social-icon {
+    fill: #ffffff;
+}
+
+.copyright {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.copyright-link {
+    color: #af7842;
 }
