@@ -13,10 +13,12 @@
  <body>
      <header>
         <nav>
-            <img src="img/logoheader.svg" width="138" height="16" alt="Логотип">
+           <a href="file:///E:/Vanya/projects/barbershop/index.html">
+            <img src="img/logo-header.svg" width="138" height="16" alt="Логотип барбершопа Бородинский">
+          </a>
            <ul>
                <li>
-                   <a href="#"> О нас</a>
+                   <a href="#">О нас</a>
                </li>
                <li>
                    <a href="#">Каталог</a>
@@ -26,12 +28,12 @@
               </li>
            </ul>
            <ul>
-               <li class="user-navigation-item">
+               <li>
                    <a href="#">
                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#242424"/>
                        </svg>
-                       <span> Поиск </span>                  
+                       <span>Поиск</span>                  
                     </a>
                  </li>
                <li>
@@ -55,33 +57,98 @@
      </header>
      <main>
        <h1>Каталог</h1>
-       <a href="#">Главная</a>
-       <a href="#">Каталог</a>
-       <form>
-           <label for="price">Цена</label>
-           <button>
-               <span>От</span>
-           </button>
-           <button>
-               <span>До</span>
-           </button>
-           <input type="range" id="price" name="price"  min="50" max="1500"
-           value="400" step="1">
-           <input type="range" id="price" name="price"  min="50" max="1500"
-           value="1000" step="1">
-           <label for="text">Производители</label>
-           <input type="checkbox" id="text" name="text">Bed Head for Men
-           <input type="checkbox" id="text" name="text" checked>Homme Deep Cleansing Cool
-           <input type="checkbox" id="text" name="text" checked>So Intense
-           <input type="checkbox" id="text" name="text">Sprekenhus
-           <input type="checkbox" id="text" name="text">Firm Storе
-           <input type="checkbox" id="text" name="text" checked>Winter Body
-           <label for="group">Группы товаров</label>
-           <input type="radio" id="group" name="text">Бритвенные принадлежности
-           <input type="radio" id="group" name="text" checked>Средства для ухода
-           <input type="radio" id="group" name="text">Аксессуары
-           <input type="submit" value="Показать"> 
-       </form>
+       <ul>
+         <li>
+          <a href="file:///E:/Vanya/projects/barbershop/index.html">Главная</a>
+        </li>
+        <li>
+          <a>Каталог</a>
+        </li>
+      </ul>
+      <section>
+        <h2>Фильтр товаров</h2>
+        <form>
+          <fieldset>
+            <legend>Цена</legend>
+            <button>
+              <span>Минимальная цена</span>
+            </button>
+            <button>
+              <span>Максимальная цена</span>
+            </button>
+            <label for="price">
+               От
+              <input type="number" name="price"  min="50" max="1500"
+              value="50" step="1">
+               ₽
+            </label>
+            <label for="price">
+              До
+              <input type="number" name="price"  min="50" max="1500"
+              value="1500" step="1">
+              ₽
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+                <li>
+                    <label for="text-1">
+                        <input type="checkbox" name="text-1">Bed Head for Men
+                    </label>
+                </li>
+                <li>
+                    <label for="text-2">
+                        <input type="checkbox" name="text-2" checked>Homme Deep Cleansing Cool
+                    </label>
+                </li>
+                <li>
+                    <label for="text-3">
+                        <input type="checkbox" name="text-3" checked>So Intense
+                    </label>
+                </li>
+                <li>
+                    <label for="text-4">
+                        <input type="checkbox" name="text-4">Sprekenhus
+                    </label>
+                </li>
+                <li>
+                    <label for="text-5">
+                        <input type="checkbox" name="text-5">Firm Storе
+                    </label>
+                </li>
+                <li>
+                    <label for="text-6">
+                        <input type="checkbox" name="text-6" checked>Winter Body
+                    </label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+           <legend>Группы товаров</legend>
+           <ul>
+            <li>
+                <label for="product group">
+                  <input type="radio" name="product group"  value="Первая группа товаров">Бритвенные принадлежности
+                </label>
+            </li>
+            <li>
+                <label for="product group">
+                  <input type="radio" name="product group" value="Вторая группа товаров" checked>Средства для ухода
+                </label>
+            </li>
+            <li>
+                <label for="product group">
+                  <input type="radio" name="product group" value="Третья группа товаров">Аксессуары
+                </label>
+            </li>
+          </ul>
+          <button>
+            Показать
+          </button>
+        </fieldset>
+        </form>
+      </section>
     </main>
  </body>
 </html>
