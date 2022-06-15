@@ -13,7 +13,7 @@
  <body>
      <header>
         <nav>
-           <a href="file:///E:/Vanya/projects/barbershop/index.html">
+           <a href="E:/Vanya/projects/barbershop/index.html">
             <img src="img/logo-header.svg" width="138" height="16" alt="Логотип барбершопа Бородинский">
           </a>
            <ul>
@@ -59,32 +59,32 @@
        <h1>Каталог</h1>
        <ul>
          <li>
-          <a href="file:///E:/Vanya/projects/barbershop/index.html">Главная</a>
+          <a href="E:/Vanya/projects/barbershop/index.html">Главная</a>
         </li>
         <li>
           <a>Каталог</a>
         </li>
       </ul>
       <section>
-        <h2>Фильтр товаров</h2>
+        <h2>Фильтр товаров и список товаров</h2>
         <form>
           <fieldset>
             <legend>Цена</legend>
             <button>
-              <span>Минимальная цена</span>
+              <span>Выбрать минимальную цену</span>
             </button>
             <button>
-              <span>Максимальная цена</span>
+              <span>Выбрать максимальную цену</span>
             </button>
-            <label for="price">
+            <label>
                От
-              <input type="number" name="price"  min="50" max="1500"
+              <input type="number" name="min-price"  min="50" max="1500"
               value="50" step="1">
                ₽
             </label>
-            <label for="price">
+            <label>
               До
-              <input type="number" name="price"  min="50" max="1500"
+              <input type="number" name="max-price"  min="50" max="1500"
               value="1500" step="1">
               ₽
             </label>
@@ -93,33 +93,33 @@
             <legend>Производители</legend>
             <ul>
                 <li>
-                    <label for="text-1">
-                        <input type="checkbox" name="text-1">Bed Head for Men
+                    <label>
+                        <input type="checkbox" name="bed-head-for-men">Bed Head for Men
                     </label>
                 </li>
                 <li>
-                    <label for="text-2">
-                        <input type="checkbox" name="text-2" checked>Homme Deep Cleansing Cool
+                    <label>
+                        <input type="checkbox" name="homme-deep-cleansing-cool" checked>Homme Deep Cleansing Cool
                     </label>
                 </li>
                 <li>
-                    <label for="text-3">
-                        <input type="checkbox" name="text-3" checked>So Intense
+                    <label>
+                        <input type="checkbox" name="so-intense" checked>So Intense
                     </label>
                 </li>
                 <li>
-                    <label for="text-4">
-                        <input type="checkbox" name="text-4">Sprekenhus
+                    <label>
+                        <input type="checkbox" name="sprekenhus">Sprekenhus
                     </label>
                 </li>
                 <li>
-                    <label for="text-5">
-                        <input type="checkbox" name="text-5">Firm Storе
+                    <label>
+                        <input type="checkbox" name="firm-storе">Firm Storе
                     </label>
                 </li>
                 <li>
-                    <label for="text-6">
-                        <input type="checkbox" name="text-6" checked>Winter Body
+                    <label>
+                        <input type="checkbox" name="winter-body" checked>Winter Body
                     </label>
                 </li>
             </ul>
@@ -128,22 +128,22 @@
            <legend>Группы товаров</legend>
            <ul>
             <li>
-                <label for="product group">
-                  <input type="radio" name="product group"  value="Первая группа товаров">Бритвенные принадлежности
+                <label>
+                  <input type="radio" name="product-group"  value="shaving-accassoties">Бритвенные принадлежности
                 </label>
             </li>
             <li>
-                <label for="product group">
-                  <input type="radio" name="product group" value="Вторая группа товаров" checked>Средства для ухода
+                <label>
+                  <input type="radio" name="product-group" value="care-products" checked>Средства для ухода
                 </label>
             </li>
             <li>
-                <label for="product group">
-                  <input type="radio" name="product group" value="Третья группа товаров">Аксессуары
+                <label>
+                  <input type="radio" name="product-group" value="accessories">Аксессуары
                 </label>
             </li>
           </ul>
-          <button>
+          <button type="submit">
             Показать
           </button>
         </fieldset>
