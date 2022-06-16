@@ -525,3 +525,83 @@ body {
 .copyright-link {
     color: #af7842;
 }
+
+/* Стилизация каталога */
+
+.navigation-icon-2 {
+    fill: #ffffff;
+}
+
+.main-header-nav-2 {
+    display: grid;
+    grid-template-columns: 138px 320px 165px;
+    gap: 107px 210px;
+}
+
+.navigation-img {
+    padding: 25px 0 20px 0
+}
+
+.site-navigation-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.user-navigation-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-2 {
+    padding: 40px 40px 60px 40px;
+    background-color: #fbf7f4;
+}
+
+.main-title {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+}
+
+.list-title {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-title-item {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22px; 
+    margin-right: 32px;
+}
+
+.title-link {
+    color: #242424;
+}
+
+.title-link-active {
+    position: relative;
+    color: #595959;
+}
+
+.title-link-active::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #242424;
+    top: 7px;
+    left: -18px;
+    transform: rotate(45deg);
+}
