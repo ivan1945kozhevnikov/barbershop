@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Каталог</title>
+ </head>
+ <body>
+     <header>
+        <nav>
+           <a href="index.html">
+            <img src="img/logo-header.svg" width="138" height="16" alt="Логотип барбершопа Бородинский">
+          </a>
+           <ul>
+               <li>
+                   <a href="#">О нас</a>
+               </li>
+               <li>
+                   <a href="#">Каталог</a>
+              </li>
+               <li>
+                   <a href="#">Частые вопросы</a>
+              </li>
+           </ul>
+           <ul>
+               <li>
+                   <a href="#">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#242424"/>
+                       </svg>
+                       <span>Поиск</span>                  
+                    </a>
+                 </li>
+               <li>
+                   <a href="#">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#242424"/>
+                       </svg>
+                      <span>Корзина</span>
+                   </a>
+              </li>
+              <li>
+               <a href="#">
+                   <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M6 6C7.65685 6 9 4.65685 9 3C9 1.34315 7.65685 0 6 0C4.34315 0 3 1.34315 3 3C3 4.65685 4.34315 6 6 6ZM6 8C2.68629 8 0 10.6863 0 14H12C12 10.6863 9.31371 8 6 8Z" fill="#242424"/>
+                   </svg>
+                   <span>Профиль</span>
+                 </a> 
+             </li>
+           </ul>
+        </nav>
+     </header>
+     <main>
+       <h1>Каталог</h1>
+       <ul>
+         <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a>Каталог</a>
+        </li>
+      </ul>
+      <section>
+        <h2>Фильтр товаров и список товаров</h2>
+        <form>
+          <fieldset>
+            <legend>Цена</legend>
+            <button>
+              <span>Выбрать минимальную цену</span>
+            </button>
+            <button>
+              <span>Выбрать максимальную цену</span>
+            </button>
+            <label>
+               От
+              <input type="number" name="min-price"  min="50" max="1500"
+              value="50" step="1">
+               ₽
+            </label>
+            <label>
+              До
+              <input type="number" name="max-price"  min="50" max="1500"
+              value="1500" step="1">
+              ₽
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="bed-head-for-men">Bed Head for Men
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="homme-deep-cleansing-cool" checked>Homme Deep Cleansing Cool
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="so-intense" checked>So Intense
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="sprekenhus">Sprekenhus
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="firm-storе">Firm Storе
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="winter-body" checked>Winter Body
+                    </label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+           <legend>Группы товаров</legend>
+           <ul>
+            <li>
+                <label>
+                  <input type="radio" name="product-group"  value="shaving-accessories">Бритвенные принадлежности
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="product-group" value="care-products" checked>Средства для ухода
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="product-group" value="accessories">Аксессуары
+                </label>
+            </li>
+          </ul>
+          <button type="submit">
+            Показать
+          </button>
+        </fieldset>
+        </form>
+      </section>
+    </main>
+ </body>
+</html>
