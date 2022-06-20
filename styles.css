@@ -528,11 +528,11 @@ body {
 
 /* Стилизация каталога */
 
-.navigation-icon-2 {
+.catalog-navigation-icon {
     fill: #ffffff;
 }
 
-.main-header-nav-2 {
+.catalog-header-nav {
     height: 70px;
     display: grid;
     grid-template-columns: 138px 320px 165px;
@@ -543,7 +543,7 @@ body {
     padding: 23px 0 22px 0;
 }
 
-.site-navigation-2 {
+.catalog-site-navigation {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -554,7 +554,7 @@ body {
     list-style: none;
 }
 
-.site-navigation-2::before {
+.catalog-site-navigation::before {
     position: absolute;
     content: "";
     width: 53px;
@@ -564,18 +564,18 @@ body {
     right: 171px;
 }
 
-.link-item-2 {
+.catalog-link-item {
     padding: 25px 20px 24px 20px;
 }
 
-.user-navigation-2 {
+.catalog-user-navigation {
     display: flex;
     margin: 0 0 0 110px;
     padding: 0;
     list-style: none;
 }
 
-.main-2 {
+.catalog-main {
     padding: 40px 40px 60px 40px;
     background-color: #fbf7f4;
 }
