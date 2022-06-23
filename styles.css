@@ -562,7 +562,6 @@ body {
 }
 
 .breadcrumbs {
-    position: relative;
     display: flex;
     margin: 0;
     padding: 0;
@@ -570,6 +569,7 @@ body {
 }
 
 .breadcrumbs-item {
+    position: relative;
     font-family: 'PT Sans', sans-serif;
     line-height: 22px; 
     margin-right: 32px;
@@ -577,6 +577,18 @@ body {
 
 .breadcrumbs-item::before {
     position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #242424;
+    top: 6px;
+    left: 65px;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-item-active::before {
+    position: absolute;
+    visibility: hidden;
     content: "";
     width: 9px;
     height: 9px;
