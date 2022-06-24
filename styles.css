@@ -587,15 +587,7 @@ body {
 }
 
 .breadcrumbs-item-active::before {
-    position: absolute;
-    visibility: hidden;
-    content: "";
-    width: 9px;
-    height: 9px;
-    background-color: #242424;
-    top: 6px;
-    left: 65px;
-    transform: rotate(45deg);
+    content: none;
 }
 
 .breadcrumbs-link {
