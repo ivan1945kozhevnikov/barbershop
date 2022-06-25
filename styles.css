@@ -27,6 +27,7 @@ body {
 
 .main-header-nav {
     display: flex;
+    align-items: center;
 }
 
 .site-navigation {
@@ -530,7 +531,6 @@ body {
 /* Стилизация каталога */
 
 .header-logo {
-    padding: 24px 0 20px 0;
     margin-right: 102px;
 }
 
