@@ -27,7 +27,7 @@ body {
 
 .main-header-nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .site-navigation {
@@ -45,6 +45,7 @@ body {
     display: inline-block;
     padding: 24px 20px;
     font-size: 16px;
+    line-height: 22px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -65,8 +66,9 @@ body {
 
 .user-navigation  .link-item {
     position: relative;
-    width: 16px;
-    height: 22px;
+    display: flex;
+    min-width: 16px;
+    min-height: 22px;
 }
 
 .navigation-icon {
@@ -80,7 +82,7 @@ body {
  }
 
 .link-item-login .navigation-icon {
-    left: -20px;
+    left: -42px;
 }
 
 .main {
@@ -524,4 +526,74 @@ body {
 
 .copyright-link {
     color: #af7842;
+}
+
+/* Стилизация каталога */
+
+.header-logo {
+    margin-right: 102px;
+}
+
+.link-item-active {
+    position: relative;
+}
+
+.link-item-active::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 40px);
+    height: 4px;
+    background-color: #fbf7f4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.catalog-main {
+    padding: 40px 0 60px;
+    background-color: #fbf7f4;
+}
+
+.catalog-title {
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0 0 17px 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs-item {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22px; 
+    margin-right: 32px;
+}
+
+.breadcrumbs-item::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #242424;
+    top: 6px;
+    left: 65px;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-item-active::before {
+    content: none;
+}
+
+.breadcrumbs-link {
+    color: #242424;
+}
+
+.breadcrumbs-link-active {
+    color: #595959;
 }
