@@ -27,6 +27,7 @@ body {
 
 .main-header-nav {
     display: flex;
+    align-items: center;
 }
 
 .site-navigation {
@@ -529,24 +530,27 @@ body {
 
 /* Стилизация каталога */
 
-.navigation-img {
-    position: relative;
-    padding-left: 0;
-    margin-right: 80px;
+.header-logo {
+    margin-right: 102px;
 }
 
-.navigation-img::before {
+.link-item-active {
+    position: relative;
+}
+
+.link-item-active::before {
     position: absolute;
     content: "";
-    width: 53px;
+    width: calc(100% - 40px);
     height: 4px;
     background-color: #fbf7f4;
     bottom: 0;
-    right: -230px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .catalog-main {
-    padding: 40px 0 0 0;
+    padding: 40px 0 60px;
     background-color: #fbf7f4;
 }
 
@@ -558,15 +562,21 @@ body {
     margin: 0 0 16px 0;
 }
 
-.list-title {
-    position: relative;
+.breadcrumbs {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.list-title::before {
+.breadcrumbs-item {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22px; 
+    margin-right: 32px;
+}
+
+.breadcrumbs-item::before {
     position: absolute;
     content: "";
     width: 9px;
@@ -577,17 +587,15 @@ body {
     transform: rotate(45deg);
 }
 
-.list-title-item {
-    font-family: 'PT Sans', sans-serif;
-    line-height: 22px; 
-    margin-right: 32px;
+.breadcrumbs-item-active::before {
+    content: none;
 }
 
-.title-link {
+.breadcrumbs-link {
     color: #242424;
 }
 
-.title-link:last-child {
+.breadcrumbs-link-active {
     color: #595959;
 }
 
