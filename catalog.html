@@ -58,9 +58,10 @@
       </div>
      </header>
      <main class="catalog-main">
-      <header class="catalog-header">
-       <h1 class="catalog-title">Каталог</h1>
-       <ul class="breadcrumbs">
+      <div class="container">
+       <header class="catalog-header">
+        <h1 class="catalog-title">Каталог</h1>
+        <ul class="breadcrumbs">
          <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
@@ -71,11 +72,11 @@
       </header>
       <div class="sections-container">
        <h2 class="visually-hidden">Фильтр товаров</h2>
-       <section>
+       <section class="filters">
         <form>
           <fieldset class="catalog-filter-group">
-           <legend class="catalog-filter-title">Цена</legend>
-           <div class="range">
+           <legend class="catalog-filter-title-price">Цена</legend>
+           <div>
              <div class="range-bar">
               <button class="range-toggle">
                <span class="visually-hidden">Выбрать минимальную цену</span>
@@ -83,57 +84,57 @@
               <button class="range-toggle">
                 <span class="visually-hidden">Выбрать максимальную цену</span>
               </button>
-             </div>
            </div>
            <div class="range-inputs-wrapper">
             <label class="catalog-filter-label">
               От
-             <input class="range-input" type="number" name="min-price"  min="50" max="1500"
+             <input class="range-input-min" type="number" name="min-price"  min="50" max="1500"
              value="50" step="1">
               ₽
             </label>
-            <label class="catalog-filter-label">
-             До
-             <input class="range-input" type="number" name="max-price"  min="50" max="1500"
+             <label class="catalog-filter-label">
+              До
+              <input class="range-input" type="number" name="max-price"  min="50" max="1500"
              value="1500" step="1">
-             ₽
-            </label>
+              ₽
+             </label>
+            </div>
            </div>
          </fieldset>
          <fieldset class="catalog-filter-group">
-           <legend class="fieldset-title">Производители</legend>
-           <ul class="list-avtor">
-               <li class="avtor-item">
+           <legend class="catalog-filter-title">Производители</legend>
+           <ul class="catalog-filter-list">
+               <li class="catalog-filter-item">
                    <label> 
                       <span class="fake"></span>
                        <input class="checkbox" type="checkbox" name="bed-head-for-men">Bed Head for Men
                    </label>
                </li>
-               <li class="avtor-item">
+               <li class="catalog-filter-item">
                    <label>
                        <span class="fake-active"></span>
                        <input class="checkbox" type="checkbox" name="homme-deep-cleansing-cool" checked>Homme Deep Cleansing Cool
                    </label>
                </li>
-               <li class="avtor-item">
+               <li class="catalog-filter-item">
                    <label>
                        <span class="fake-active"></span>
                        <input class="checkbox" type="checkbox" name="so-intense" checked>So Intense
                    </label>
                </li>
-               <li class="avtor-item">
+               <li class="catalog-filter-item">
                    <label>
                        <span class="fake"></span>
                        <input class="checkbox" type="checkbox" name="sprekenhus">Sprekenhus
                    </label>
                </li>
-               <li class="avtor-item">
+               <li class="catalog-filter-item">
                    <label>
                        <span class="fake"></span>
                        <input class="checkbox" type="checkbox" name="firm-storе">Firm Storе
                    </label>
                </li>
-               <li class="avtor-item">
+               <li class="catalog-filter-item">
                    <label>
                        <span class="fake-active"></span>
                        <input class="checkbox" type="checkbox" name="winter-body" checked>Winter Body
@@ -142,21 +143,21 @@
            </ul>
          </fieldset>
          <fieldset class="catalog-filter-group">
-          <legend class="fieldset-title">Группы товаров</legend>
-          <ul class="list-products">
-           <li class="products-item">
+          <legend class="catalog-filter-title">Группы товаров</legend>
+          <ul class="catalog-filter-list">
+           <li class="catalog-filter-item">
                <label>
                  <span class="radio-fake"></span>
                  <input class="radio" type="radio" name="product-group"  value="shaving-accessories">Бритвенные принадлежности
                </label>
            </li>
-           <li class="products-item">
+           <li class="catalog-filter-item">
                <label>
                  <span class="radio-fake-active"></span>
-                 <input clss="radio" type="radio" name="product-group" value="care-products" checked>Средства для ухода
+                 <input class="radio" type="radio" name="product-group" value="care-products" checked>Средства для ухода
                </label>
            </li>
-           <li class="products-item">
+           <li class="catalog-filter-item">
                <label>
                  <span class="radio-fake"></span>
                  <input class="radio" type="radio" name="product-group" value="accessories">Аксессуары
